@@ -22,10 +22,10 @@ const Anime = (props) => {
       {animes?.map((item) => (
         <div>
           <p>{item.title}</p>
-          <img
+          <a href={`${item.url}`} target="tab"><img
             width="200"
             src={`${item.images.jpg.image_url}`}
-          />
+          /></a>
         </div>
       ))}
     </div>
